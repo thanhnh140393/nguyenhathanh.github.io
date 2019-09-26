@@ -1,0 +1,460 @@
+
+body
+{
+	font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.triangle
+{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.triangle:after
+{
+	content: '';
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: url(img/triangle_bg_black.png) repeat-x;
+    transform: rotate(180deg);
+    background-size: 26px 10px;
+}
+
+header
+{
+	width: 100%;
+	height: 700px;
+	background-image: linear-gradient(to top, rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.6)),url(img/slider_1_1920_1200.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+header .menu
+{
+	padding: 20px;
+	background-image: linear-gradient(to top, rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.6));
+}
+
+header .menu .navbar-default
+{
+	background-color: transparent;
+	margin: 0;
+	border: none;
+}
+
+header .menu .navbar-default .navbar-header img
+{
+	width: 150px;
+}
+
+header .menu .nav
+{
+	padding-top: 10px;
+}
+
+header .navbar-default .navbar-nav>li>a
+{
+	color: white;
+	font-weight: 600;
+}
+
+header .navbar-default .navbar-nav>li>a:hover
+{
+	color: red;
+}
+
+header .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+	background-color: transparent;
+	color: red;
+}
+
+header .navbar-default .navbar-nav .btn
+{
+	padding: 15px 20px;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+	background-color: red;
+	border: 1px solid red;
+	letter-spacing: 2px;
+}
+
+header .navbar-default .navbar-nav .btn:hover
+{
+	background-color: transparent;
+	color: red;
+}
+
+header .navbar-default .navbar-toggle
+{
+	border: 1px solid red;
+	background-color: red;
+}
+
+
+header .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+{
+	background-color: transparent;
+}
+
+header .navbar-default .navbar-toggle .icon-bar
+{
+	background-color: white !important;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+	header .menu .navbar-default .navbar-header
+{
+	margin: auto !important;
+    width: 150px;
+    display: block;
+    float: none;
+}
+
+}
+
+
+header .title-header
+{
+	width: 70%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(700px - 103px);
+}
+
+header .title-header .title
+{
+	text-align: center;
+}
+
+header .title-header .title h2
+{
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+header .title-header .title h1
+{
+	font-family: 'Pacifico', cursive;
+	font-size: 7.5em;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: white;
+}
+
+header .triangle:after
+{
+	background: url(img/triangle_bg.png) repeat-x;
+	transform: rotate(0deg);
+	background-size: 26px 10px;
+}
+
+@media screen and (max-width: 567px) {
+	header .title-header
+{
+	height: calc(500px - 103px);
+}
+
+	header .title-header .title h1 {
+		font-size: 5.5em;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	header .title-header
+{
+	height: calc(500px - 103px);
+}
+
+}
+
+/*----------------------------Story-------------------------*/
+.story
+{
+	padding: 50px 0px;
+	background-image: url(img/story_bg_1.png),url(img/story_bg_2.png);
+	background-position: left, right;
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	position: relative;
+}
+
+.story .title-story
+{
+	text-align: center;
+	padding-bottom: 5em;
+}
+
+
+.story .title-story h1
+{
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+}
+
+.story .item-story
+{
+	padding:10px;
+}
+
+.story .item-story p
+{
+	color: black;
+}
+
+@media screen and (max-width: 567px) {
+	.story {
+		background-image: url(img/story_bg_1.png) !important;
+	}
+}
+
+/*------------------------Best Seller-----------------*/
+
+.best-seller
+{
+	position: relative;
+	background-image: linear-gradient(to top, rgba(0, 0, 0,0.7), rgba(0, 0, 0,1)),url(img/sellers-1-1600x1600.jpg);
+	padding: 50px 0px;
+	background-size: cover;
+	background-position: center;
+}
+
+.best-seller .triangle:after
+{
+	background: url(img/triangle_bg.png) repeat-x;
+	transform: rotate(0deg);
+	background-size: 26px 10px;
+}
+
+.best-seller .title-seller
+{
+	text-align: center;
+	padding-bottom: 5em;
+}
+
+
+.best-seller .title-seller h1
+{
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	color: white;
+}
+
+.best-seller .row-items
+{
+	margin: 40px 0px;
+}
+
+.best-seller .item-seller .ribbon
+{
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+
+.best-seller .item-seller .tag-ribbon
+{
+	position: absolute;
+	margin: 0;
+	background-color: #EF0031;
+	width: 120px;
+	padding:6px 6px 6px 0px;
+	left: 0%;
+	top:40%;
+	clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100% );
+}
+
+.best-seller .item-seller .color-tag-ribbon
+{
+	background-color: green;
+}
+.best-seller .item-seller .tag-ribbon h1
+{
+	display: inline;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.best-seller .item-seller .ribbon img
+{
+	width: 100%;
+}
+
+.best-seller .item-seller
+{
+	padding: 5px;
+	text-align: center;
+	position: relative;
+}
+
+.best-seller .item-seller h1
+{
+	color: white;
+	font-size: 20px;
+}
+
+.best-seller .item-seller h2
+{
+	color: white;
+	font-size: 19px;
+}
+
+.best-seller .item-seller button
+{
+	background-color: transparent;
+	border: 1px solid #EF0031;
+	color: #EF0031;
+	padding:10px 15px;
+}
+
+.best-seller .item-seller button:hover
+{
+	color: white;
+	background-color: #EF0031;
+	transition: 0.5s;
+}
+
+/*----------------------------Menu----------------------------*/
+.menu-res
+{
+	padding: 50px 0px;
+	position: relative;
+	width: 100%;
+	height: 1100px;
+}
+
+.menu-res .title-menu-res
+{
+	text-align: center;
+	padding-bottom: 5em;
+}
+
+
+.menu-res .title-menu-res h1
+{
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+}
+
+.menu-res .nav-menu-res
+{
+	border-bottom: 2px solid #EF0031;
+	text-align: center;
+}
+
+.menu-res .nav-menu-res button
+{
+	background-color: transparent;
+	text-transform: uppercase;
+	border: none;
+	color: #222222;
+	font-size: 17px;
+	padding: 10px 10px;
+	outline: none;
+	border-radius: 2px;
+	margin: 0 5px;
+}
+
+.menu-res .nav-menu-res button:hover
+{
+	background-color: #EF0031;
+	color: white;
+	transition: 0.5s
+}
+
+.menu-res .nav-menu-res #active
+{
+	background-color: #EF0031;
+	color: white;
+}
+
+.menu-res .item-menu
+{
+	padding-top: 50px;
+	display: flex;
+	min-height: 90px;
+}
+
+.menu-res .item-menu img
+{
+	border-radius: 5px;
+	width: 120px;
+	height: 120px;
+}
+
+.menu-res .item-menu .infor-item
+{
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.menu-res .item-menu .infor-item h1
+{
+	display: inline-block;
+	margin: 0 0 15px 0;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.menu-res .item-menu .infor-item h2
+{
+	display: inline-block;
+	color: red;
+	margin: 0 0 15px 0;
+	font-size: 20px;
+	float: right;
+}
+
+.menu-res .item-menu .infor-item p
+{
+	width: 80%;
+	font-size: 1.05em;
+	font-weight: 400;
+	color: #555;
+}
+
+.hide-item
+{
+	display: none !important;
+}
+
+.show-item
+{
+	display: flex;
+}
+
+.animate
+{
+	animation: fl 2s 1;
+}
+
+@keyframes fl
+{
+	0%{opacity: 0};
+	100%{opacity: 1};
+}
+
